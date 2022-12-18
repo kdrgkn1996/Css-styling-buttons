@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      #showcase {
+        background-image: url("avatar2.jpeg.png");
+        background-position: center;
+        height: 560px;
+        width: 100%;
+        padding: 10px;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      #How-It-Work {
+        color: black;
+        background-color: #fff;
+        padding: 10px;
+        text-align: center;
+      }
+      .main-header {
+        background-color: #fc997c;
+        padding: 16px 32px;
+      }
+      .main-nav {
+        display: inline-block;
+        text-align: right;
+        width: calc(100% - 101px);
+      }
+      .main-nav__items {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+      .main-nav__item {
+        display: inline-block;
+        margin: 0px 8px;
+      }
+      .main-header__logo {
+        color: #ffff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 21px;
+      }
+      .main-nav__item a {
+        text-decoration: none;
+        color: #fff;
+      }
+      .main-nav__item a:hover,
+      .main-nav__item:hover::before {
+        color: gray;
+      }
+
+      .main-nav__item a:active,
+      .main-nav__item:active::before {
+        color: #fff;
+      }
+
+      .main-nav__item::before {
+        content: "\2022";
+        color: #fff;
+      }
+
+      .main-nav_item__login a {
+        color: #fff;
+        background-color: #2e4c6d;
+        padding: 4px 16px;
+        border-radius: 8px;
+        border: 2px solid white;
+      }
+      .main-nav_item__login::before {
+        content: none;
+      }
+
+      .main-nav_item__login a:hover {
+        background-color: #fff;
+        color: #2e4c6d;
+        border: 2px solid #2e4c6d;
+      }
+
+      .row {
+        margin-bottom: 40px;
+      }
+
+      .col {
+        display: inline-block;
+        width: 30%;
+        padding: 10px;
+        margin: 8px;
+      }
+      #How-It-Work h2 {
+        color: #3e4555;
+        font-size: 30px;
+      }
+
+      .icon-box h3 {
+        color: #3e4555;
+        font-size: 25px;
+      }
+      #showcase h1 {
+        color: #fff;
+      }
+
+      .main-nav__item {
+        font-size: 20px;
+      }
+
+      .main-header__logo {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="main-header">
+      <a href="#" class="main-header__logo">SineAnaliz</a>
+      <nav class="main-nav">
+        <ul class="main-nav__items">
+          <li class="main-nav__item">
+            <a href="#">Filmler</a>
+          </li>
+
+          <li class="main-nav__item">
+            <a href="#">Diziler</a>
+          </li>
+
+          <li class="main-nav__item , main-nav_item__login">
+            <a href="#">Login</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="showcase">
+        <h1>Welcome To SineAnaliz</h1>
+      </section>
+      <section id="How-It-Work">
+        <div class="row">
+          <h2>How Its Works</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+            commodi porro voluptatem sunt omnis. Omnis.
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="icon-box col">
+            <h3>Registers</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto
+              sed animi sint dolores hic consectetur.
+            </p>
+          </div>
+
+          <div class="icon-box col">
+            <h3>Choose a plan</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto
+              sed animi sint dolores hic consectetur.
+            </p>
+          </div>
+
+          <div class="icon-box col">
+            <h3>Enjoy Movies</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto
+              sed animi sint dolores hic consectetur.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
